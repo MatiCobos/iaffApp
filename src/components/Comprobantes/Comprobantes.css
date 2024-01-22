@@ -1,0 +1,9 @@
+/* Estilos para la tabla con sombra */
+.table-with-shadow {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.table.table-with-shadow {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}

@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Header from './components/Header/Header';
+import TiposComprobante from './components/TiposComprobante/TiposComprobante';
+import Comprobantes from './components/Comprobantes/Comprobantes';
+import Footer from './components/Footer/Footer';
 import './App.css';
 
-function App() {
+const App = () => {
+  const [comprobantes, setComprobantes] = useState([]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="container">
+        <Header />
+        <TiposComprobante setComprobantes={setComprobantes} />
+        <Comprobantes comprobantesFiltrados={comprobantes} />
+        <Footer />
+      </div>
+    </>
   );
-}
+};
 
 export default App;

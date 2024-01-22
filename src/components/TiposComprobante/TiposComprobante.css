@@ -1,0 +1,49 @@
+.tipos-comprobante-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la barra de búsqueda */
+.search-bar-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para el botón de búsqueda */
+.btn-primary {
+    background-color: #ba0070;
+    border: 1px solid #ba0070;
+    color: #ffffff;
+    margin-left: 10px;
+}
+/* Estilos para el menú desplegable */
+.form-select {
+    width: 200px;
+    margin-right: 10px;
+}
+
+.table thead th {
+    background-color: #ba0070;
+    color: #ffffff;
+}
+
+/* Estilos para la tabla */
+.table {
+    border-color: #ba0070;
+}
+
+/* Estilos para las líneas divisorias internas de la tabla */
+.table td,
+.table th {
+    border-color: #ba0070;
+}
+
+.label-container {
+    margin-bottom: 10px;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+}
